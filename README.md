@@ -15,7 +15,7 @@ You can also run it without Claude Code: `bash scripts/install.sh [improved|orig
 In Claude Code:
 
 ```
-/plugin marketplace add Punkachu/agent_main_instructions
+/plugin marketplace add Punkachu/brutal-mirror
 /plugin install brutal-mirror@punkachu
 ```
 

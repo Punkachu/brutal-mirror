@@ -3,6 +3,6 @@
   "version": "1.0.0",
   "description": "Adds a candid, no-flattery advisor prompt to your project's CLAUDE.md or AGENTS.md.",
   "author": { "name": "Punkachu" },
-  "repository": "https://github.com/Punkachu/agent_main_instructions",
+  "repository": "https://github.com/Punkachu/brutal-mirror",
   "keywords": ["prompt", "sycophancy", "advisor", "claude-md", "agents-md"]
 }
