@@ -1,0 +1,11 @@
+{
+  "name": "punkachu",
+  "owner": { "name": "Punkachu" },
+  "plugins": [
+    {
+      "name": "brutal-mirror",
+      "source": "./",
+      "description": "Adds a candid, no-flattery advisor prompt to your project's CLAUDE.md or AGENTS.md."
+    }
+  ]
+}
