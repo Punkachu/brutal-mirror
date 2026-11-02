@@ -2,6 +2,14 @@
 
 A Claude Code plugin that adds a candid, no-flattery advisor prompt to your project's `CLAUDE.md` or `AGENTS.md`, so Claude challenges your plans instead of approving them.
 
+## What it does
+
+`scripts/install.sh` writes the prompt into the first file it finds at the repo root: `CLAUDE.md`, then `AGENTS.md`, then `AGENT.md`. If none exist, it creates `CLAUDE.md`. The prompt sits between `<!-- brutal-mirror:begin -->` and `<!-- brutal-mirror:end -->` markers, so running it again replaces the block instead of duplicating it.
+
+`CLAUDE.md` wins over `AGENTS.md` on purpose: `AGENTS.md` is also read by Codex, Cursor and other agents, and teammates using them may not want this persona.
+
+You can also run it without Claude Code: `bash scripts/install.sh [improved|original|remove]`.
+
 ## Install
 
 In Claude Code:
@@ -20,14 +28,6 @@ Then, from the project you want it in:
 ```
 
 Start a new session (or `/clear`) for it to take effect.
-
-## What it does
-
-`scripts/install.sh` writes the prompt into the first file it finds at the repo root: `CLAUDE.md`, then `AGENTS.md`, then `AGENT.md`. If none exist, it creates `CLAUDE.md`. The prompt sits between `<!-- brutal-mirror:begin -->` and `<!-- brutal-mirror:end -->` markers, so running it again replaces the block instead of duplicating it.
-
-`CLAUDE.md` wins over `AGENTS.md` on purpose: `AGENTS.md` is also read by Codex, Cursor and other agents, and teammates using them may not want this persona.
-
-You can also run it without Claude Code: `bash scripts/install.sh [improved|original|remove]`.
 
 ## Why an improved version
 
